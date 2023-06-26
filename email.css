@@ -1,0 +1,616 @@
+/* CSS LANGUAGE FOR SAILTHRU */
+
+html {-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%}
+body {margin:0; padding:0; -webkit-text-size-adjust: 100vw !important; -ms-text-size-adjust: 100% !important; -webkit-font-smoothing: antialiased !important; border-spacing:0} 
+table {border-collapse: collapse; mso-table-lspace: 0px; mso-table-rspace: 0px;}
+table td {border-collapse: collapse; mso-line-height-rule: exactly; }
+table th { margin:0 !important; padding:0 !important; vertical-align:top; font-weight:normal;}
+img, a img {border:none; outline:none; -ms-interpolation-mode: bicubic;}
+.ReadMsgBody {width: 100%;}
+.ExternalClass {width: 100%;}
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, 
+.ExternalClass div {line-height:100%;}
+.yshortcuts a {border-bottom: none !important;}
+.appleLinksGray a {color:#666666 !important; text-decoration:none !important;}
+.appleLinksWhite a {color:#FFFFFF !important; text-decoration:none !important;}
+.appleLinksBlack a {color:#000000 !important; text-decoration:none !important;}
+
+html {
+  scrollbar-face-color: #646464;
+  scrollbar-base-color: #646464;
+  scrollbar-3dlight-color: #646464;
+  scrollbar-highlight-color: #646464;
+  scrollbar-track-color: #000;
+  scrollbar-arrow-color: #000;
+  scrollbar-shadow-color: #646464;
+  scrollbar-dark-shadow-color: #646464;
+}
+
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #666; }
+::-webkit-scrollbar-track {  background-color: #646464;}
+::-webkit-scrollbar-track-piece { background-color: #000;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #646464;}
+::-webkit-resizer { background-color: #666;}
+
+/* INSERT CUSTOM FONT EMBED HERE */
+
+
+@font-face {
+	font-family: "farnham headline";
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.advance.net/fonts/v1/farnham-headline-regular/farnhamheadline-regular.woff) format('woff');
+	}
+
+@font-face {
+	font-family: "farnham headline";
+	font-style: normal;
+	font-weight: 600;
+	src: url(https://fonts.advance.net/fonts/v1/farnham-headline-semi-bold/farnhamheadline-semi-bold.woff) format('woff');
+	}
+	
+@font-face {
+	font-family: 'benton sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url(https://fonts.advance.net/fonts/v1/benton-sans-regular/166b5d40-3430-46a0-8fb2-43f30962dec7-3.woff) format('woff');
+	}
+	
+    @font-face {
+        font-family: Benton Sans;
+        font-display: swap;
+        src: url(/pf/resources/fonts/166b5d40-3430-46a0-8fb2-43f30962dec7-2.eot?d=1063);
+        src: url(/pf/resources/fonts/166b5d40-3430-46a0-8fb2-43f30962dec7-2.eot?d=1063) format("embedded-opentype"), url(/pf/resources/fonts/166b5d40-3430-46a0-8fb2-43f30962dec7-3.woff?d=1063) format("woff"), url(/pf/resources/fonts/166b5d40-3430-46a0-8fb2-43f30962dec7-1.ttf?d=1063) format("truetype"), url(/pf/resources/fonts/166b5d40-3430-46a0-8fb2-43f30962dec7-4.svg?d=1063#web) format("svg");
+        font-style: normal;
+        font-weight:400
+    }
+    
+    @font-face {
+        font-family: Benton Sans Medium;
+        font-display: swap;
+        src: url(/pf/resources/fonts/448c4642-c106-472f-9c6a-a4d7b5347b03-2.eot?d=1063);
+        src: url(/pf/resources/fonts/448c4642-c106-472f-9c6a-a4d7b5347b03-2.eot?d=1063) format("embedded-opentype"), url(/pf/resources/fonts/448c4642-c106-472f-9c6a-a4d7b5347b03-3.woff?d=1063) format("woff"), url(/pf/resources/fonts/448c4642-c106-472f-9c6a-a4d7b5347b03-1.ttf?d=1063) format("truetype"), url(/pf/resources/fonts/448c4642-c106-472f-9c6a-a4d7b5347b03-4.svg?d=1063#web) format("svg");
+        font-style: normal;
+        font-weight:700
+    }
+    
+    @font-face {
+        font-family: Benton Sans Bold;
+        font-display: swap;
+        src: url(/pf/resources/fonts/a408f907-3ee4-4578-a3d1-4134558cb82a-2.eot?d=1063);
+        src: url(/pf/resources/fonts/a408f907-3ee4-4578-a3d1-4134558cb82a-2.eot?d=1063) format("embedded-opentype"), url(/pf/resources/fonts/a408f907-3ee4-4578-a3d1-4134558cb82a-3.woff?d=1063) format("woff"), url(/pf/resources/fonts/a408f907-3ee4-4578-a3d1-4134558cb82a-1.ttf?d=1063) format("truetype"), url(/pf/resources/fonts/a408f907-3ee4-4578-a3d1-4134558cb82a-4.svg?d=1063#web) format("svg");
+        font-style: normal;
+        font-weight:700
+    }
+    
+    @font-face {
+        font-family: Farnham Regular;
+        font-display: swap;
+        src: url(/pf/resources/fonts/farnhamheadline-regular.eot?d=1063);
+        src: url(/pf/resources/fonts/farnhamheadline-regular.eot?d=1063) format("embedded-opentype"), url(/pf/resources/fonts/farnhamheadline-regular.woff?d=1063) format("woff"), url(/pf/resources/fonts/farnhamheadline-regular.woff2?d=1063) format("woff2");
+        font-style: normal;
+        font-weight:400
+    }
+    
+    @font-face {
+        font-family: Farnham Medium;
+        font-display: swap;
+        src: url(/pf/resources/fonts/farnhamheadline-medium.eot?d=1063);
+        src: url(/pf/resources/fonts/farnhamheadline-medium.eot?d=1063) format("embedded-opentype"), url(/pf/resources/fonts/farnhamheadline-medium.woff?d=1063) format("woff"), url(/pf/resources/fonts/farnhamheadline-medium.woff2?d=1063) format("woff2");
+        font-style: normal;
+        font-weight:700
+    }
+    
+    @font-face {
+        font-family: Farnham Semi Bold;
+        font-display: swap;
+        src: url(/pf/resources/fonts/farnhamheadline-semi-bold.eot?d=1063);
+        src: url(/pf/resources/fonts/farnhamheadline-semi-bold.eot?d=1063) format("embedded-opentype"), url(/pf/resources/fonts/farnhamheadline-semi-bold.woff?d=1063) format("woff"), url(/pf/resources/fonts/farnhamheadline-semi-bold.woff2?d=1063) format("woff2");
+        font-style: normal;
+        font-weight:700
+    }
+
+
+    @media only screen and (max-width: 600px) {
+           
+/************************************ MAIN *************************************/ 
+                   
+        .remove { display:none !important; width:0 !important; height:0 !important; }
+        .stack { display:block !important; }
+        .stack-header {display:table-header-group !important;}
+        .stack-footer {display:table-footer-group !important;}
+        .stack-image img {margin-bottom:20px !important;}
+                    
+        /************************************ ALIGNERS *************************************/
+                   
+        .center-align {text-align:center !important; margin:0 auto !important;}
+        .left-align {text-align:left !important;}
+        .right-align {text-align:right !important;}
+                   
+        /************************************ WIDTH RESIZERS *************************************/
+                   
+        .min-300  {min-width:300px !important;}
+        .max-300  {max-width:300px !important;}
+        .max-320  {max-width:320px !important;}
+        .max-340  {max-width:340px !important;}
+        .w-resize100 { width:100% !important; }
+        .w-resize90 { width:90% !important; }
+        .w-resize80 { width:80% !important; }
+        .w-resize280px { width:280px !important; }
+        .w-resize300px { width:300px !important; }
+        .w-resize320px { width:320px !important; }
+                   
+        /************************************ HEIGHT RESIZERS *************************************/
+                    
+        .h-resize10px { height:10px !important; }
+        .h-resize20px { height:20px !important; }
+        .h-resize30px { height:30px !important; }
+        .h-resize40px { height:40px !important; }
+        .h-resize50px { height:50px !important; }
+        .h-resize60px { height:60px !important; }
+        .h-resize70px { height:70px !important; }
+        .h-resize80px { height:80px !important; }
+        .h-resize90px { height:90px !important; }
+        .h-resize100px { height:100px !important; }
+                   
+        /************************************ IMAGE RESIZERS *************************************/
+                    
+        .resize90 img {width:90% !important; height:auto !important;}
+        .resize100 img {width:100% !important; height:auto !important;}
+        .resize280px img {width:280px !important; height:auto !important;}
+        .resize300px img {width:300px !important; height:auto !important;}
+        .resize320px img {width:320px !important; height:auto !important;}
+                    
+        /************************************ TEXT RESIZERS *************************************/
+        
+        .text14 {font-size:14px !important;}
+        .text15 {font-size:15px !important;}
+        .text16 {font-size:16px !important;}
+        .text17 {font-size:17px !important;}
+        .text18 {font-size:18px !important;}
+        .text19 {font-size:19px !important;}
+        .text20 {font-size:20px !important;}
+        .text21 {font-size:21px !important;}
+        .text22 {font-size:22px !important;}
+        .text23 {font-size:23px !important;}
+        .text24 {font-size:24px !important;}
+        .text25 {font-size:25px !important;}
+        .text26 {font-size:26px !important;}
+        .text27 {font-size:27px !important;}
+        .text28 {font-size:28px !important;}
+        .text29 {font-size:29px !important;}
+        .text30 {font-size:30px !important;}
+        
+        /************************************ LINE HEIGHT RESIZERS *************************************/
+                    
+        .lh15 {line-height:15px !important;}
+        .lh16 {line-height:16px !important;}
+        .lh17 {line-height:17px !important;}
+        .lh18 {line-height:18px !important;}
+        .lh19 {line-height:19px !important;}
+        .lh20 {line-height:20px !important;}
+        .lh21 {line-height:21px !important;}
+        .lh22 {line-height:22px !important;}
+        .lh23 {line-height:23px !important;}
+        .lh24 {line-height:24px !important;}
+        .lh25 {line-height:25px !important;}
+        .lh26 {line-height:26px !important;}
+        .lh27 {line-height:27px !important;}
+        .lh28 {line-height:28px !important;}
+        .lh29 {line-height:29px !important;}
+        .lh30 {line-height:30px !important;}
+        .lh35 {line-height:35px !important;}
+        .lh40 {line-height:40px !important;}
+        
+        /************************************ ADDITIONAL MEDIA QUERIES *************************************/
+        
+        .logo-control img {max-width:250px !important; height:auto !important;}
+        }
+            
+        @media only screen and (max-width: 480px) {
+        
+        .stack-480 { display:block !important; }
+        .center-480 { text-align:center !important; margin:0 auto !important; }
+        .w-resizeMOB { width:80% !important;}
+        .w-resize100-480 { width:100% !important; }
+            
+        }
+
+        
+/* CONSISTENT BACKGROUND STYLES FOR EMAIL CAMPAIGNS */ 
+body {
+    font-family:'benton sans', sans-serif; 
+    font-smooth: always;
+    font-style: normal;
+	font-weight: 400;
+} 
+.backHeader {
+    margin: 0%;
+    height: 100%;
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+@media only screen and (max-width: 600px) {
+.backHeader {
+    padding: 50px 50px 120px 45px;
+    width: 100vw;
+    height: 100%;
+    }
+    }
+
+/* CONSISTENT TEXT STYLES FOR EMAIL CAMPAIGNS */           
+
+h1 {
+    font-family: "farnham headline", Times, serif;
+	font-style: normal;
+	font-weight: 800;
+    font-size: 100px;
+    line-height: 80px;
+    margin-top:50;
+    margin-bottom: 35px;
+    animation: logoIntro 2s ease 0s 1 normal forwards;
+	}
+@media only screen and (max-width: 600px) {
+    h1 {
+    font-family: "farnham headline", Times, serif;
+    margin-bottom: 25px;
+	font-style: normal;
+	font-weight: 800;
+    font-size: 17vw;
+    line-height: 60px;
+    margin-right: 10vw;
+	}
+    }
+
+intro {
+    box-align: left;
+    font-family: 'benton sans', sans-serif; 
+    font-weight: 400; 
+    font-size: 20px; 
+    line-height: 35px;
+    }
+
+    @media only screen and (max-width: 600px) {
+    intro {
+    font-size: 20px; 
+    line-height: 35px;
+    width: 65vw;
+    float: left;
+    }
+    }
+
+leadin {
+    font-weight: 700;
+    font-family: 'Benton Sans Bold' sans-serif;
+    color: #FFFFFF;
+}
+
+p {
+    text-align: left;
+    width: 150;
+    font-family: 'benton sans', sans-serif; 
+    font-weight: 400; 
+    font-size: 18px; 
+    line-height: 24px;
+    z-index: 3;
+    }
+
+    @media only screen and (max-width: 600px) {
+        p {
+            text-align: left;
+            width: 65vw;
+            font-family: 'benton sans', sans-serif; 
+            font-weight: 400; 
+            font-size: 18px; 
+            line-height: 24px;
+            z-index: 5;
+            }
+        }
+    
+
+subhead {
+    font-family: "farnham headline", Times, serif;
+	font-style: normal;
+	font-weight: 800;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: left;
+}
+    @media only screen and (max-width: 600px) {
+        subhead {
+            width: 65vw;
+    }
+    }
+.logoIntro {
+    animation: logoIntro 1s ease 0s 1 normal forwards;
+}
+@keyframes logoIntro {
+	0% {
+		opacity: 0;
+		transform: translateY(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+FOOTER {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 600px) {
+    FOOTER {
+        padding-left: 50px;
+        float: left;
+    }
+}
+
+.leftText {
+    text-align: left;
+    font-family:'benton sans', sans-serif; 
+    font-size: 14px; 
+    line-height: 20px; 
+    text-size-adjust: none; 
+    font-weight: 400;
+}
+.rightText {
+    text-align: left;
+    padding-left: 30px;
+    font-family:'benton sans', sans-serif; 
+    font-size:14px; 
+    line-height: 20px; 
+    text-size-adjust: none; 
+    font-weight: 400;
+    color: var(--accent);
+    filter: brightness(55%);
+}
+.rightText:hover {
+    text-align: left;
+    padding-left: 30px;
+    font-family:'benton sans', sans-serif; 
+    font-size:14px; 
+    line-height: 20px; 
+    text-size-adjust: none; 
+    font-weight: 400;
+    color: var(--accent);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .rightText {
+    padding-left: 0px;
+    padding-top: 0px;
+    margin-top: 0;
+    }
+  }
+.logoText {
+    font-family:'benton sans', sans-serif; 
+    text-transform: uppercase; 
+    font-size:14px; 
+    color:#4a4a4a; 
+    line-height:20px; 
+    -webkit-text-size-adjust: none; 
+    font-weight:400"
+}
+@media only screen and (max-width: 600px) {
+    .logoText {
+        text-transform:none; 
+    }
+}
+.logo {
+    padding-top: 60px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 600px) {
+    .logo {
+    padding-top: 30px;
+    width: 80vw;
+    height: auto;
+    }
+}
+.backFooter {
+    height: 100vw;
+    padding-top: 50px;
+}
+underLine {
+    text-decoration: underline;
+}
+
+
+.HERO {
+    margin-top: 10px;
+}
+
+#page-flip {
+    position: absolute;
+    padding: 0px;
+    width: 400px;
+    height: 776px;
+    overflow: hidden;
+}
+
+
+#r1 {
+    position: absolute;
+    z-index: 2;
+    transform-origin: 1315px 500px;
+    transform: translate(-1030px, -500px) rotate(-45deg);
+    transition-property: transform, transform-origin;
+    transition-duration: 1s;
+}
+
+#p1 {
+    width: 1350px;
+    height: 1388px;
+    overflow: hidden;
+    box-shadow: 0 0 11px rgba(0, 0, 0, .5);
+}
+
+#p1 > div {
+    transform-origin: 290px 0;
+    transform: translate(1030px, 500px) rotate(45deg);
+    transition-property: transform, transform-origin;
+    transition-duration: 1s;
+    width: 400px;
+    height: auto;
+}
+
+
+#p2 > div {
+    width: 400px;
+    height: 776px;
+    box-shadow: 0 0 11px rgba(0, 0, 0, .5);
+    position: absolute;
+    z-index: 1;
+    background-size: 400px;
+}
+
+/* This is the start of inside page rotate */
+#r3 {
+    transform-origin: 1315px 500px;
+    transform: translate(-1030px, -500px) rotate(-45deg);
+    transition-property: transform, transform-origin;
+    transition-duration: 1s;
+    position: absolute;
+    z-index: 2;
+}
+
+
+#p3 {
+    width: 1350px;
+    height: 1388px;
+    overflow: hidden;
+}
+
+#p3 > div {
+    transform-origin: 0 0;
+    transform: translate(1305px, 585px) rotate(-45deg);
+    transition-property: transform, transform-origin;
+    transition-duration: 1s;
+    box-shadow: 0 0 11px rgba(0, 0, 0, .5);
+    width: 1570px;
+    height: 766px;
+    background-color: rgb(219, 215, 213);
+    overflow: hidden;
+}
+/* This is the end of inside page rotate */
+
+
+#page-flip:hover #r1 {
+    transform-origin: 1570px 500px;
+    transform: translate(-1330px, -500px) rotate(0deg);
+}
+
+#page-flip:hover #p1 > div {
+    transform-origin: 290px 0;
+    transform: translate(1330px, 500px) rotate(0deg);
+}
+
+#page-flip:hover #r3 {
+    transform-origin: 1570px 500px;
+    transform: translate(-1330px, -500px) rotate(0deg);
+}
+
+#page-flip:hover #p3 > div {
+    transform-origin: 30 0;
+    transform: translate(1000px, 500px) rotate(0deg);
+}
+
+.arrow {
+    font-size: 80px;
+    color: var(--accent);
+    transform: scaleX(-1) rotate(-90deg) translate(40px, 60px);
+}
+@media only screen and (max-width: 600px) {
+    .arrow {
+        font-size: 80px;
+        transform: scaleX(-1) rotate(180deg) translate(110px, -72px);
+        z-index: 3;
+    }
+}
+
+button {
+    background-color: transparent;
+    border: 3px solid var(--accent);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 20px 40px 20px 20px;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--accent);
+    border: 3px solid var(--accent);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 20px 40px 20px 20px;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+
+.heroImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    animation: coverAnim 3s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s 1 normal forwards;
+}
+@keyframes coverAnim {
+	0% {
+		opacity: 0;
+		transform: scale(2);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(calc(85% - 285px)) scale(1);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+    .heroImage {
+        display: block;
+        transform: scale(0.8);
+        transform-origin: 0% 0%;
+        height: 550px;
+        margin-left: 0;
+        animation: none;
+    }
+}
+accentColor {
+    color: var(--accent);
+}
+footerSub {
+    font-family: "farnham headline", Times, serif; 
+	font-style: bold;
+	font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: left;
+    color: var(--accent);
+    filter: brightness(55%);
+}
+accentDark {
+    color: var(--accent);
+    filter: brightness(55%);
+}
+.accentDark {
+    color: var(--accent);
+    filter: brightness(55%);
+}
