@@ -241,8 +241,65 @@ body {
     }
     }
 
-/* CONSISTENT TEXT STYLES FOR EMAIL CAMPAIGNS */           
+/* CONSISTENT TEXT STYLES FOR EMAIL CAMPAIGNS */     
+#start {
+    position: absolute;
+    width: 20px;
+    animation: startArrow 1s ease 0s 1 normal forwards, blinkArrow 1s ease 1.5s 1 normal forwards, outArrow 1s ease 3.5s 1 reverse forwards;
+}
+@keyframes startArrow {
+	0% {
+		opacity: 0;
+		transform: translate(950px, -50px) rotate(-200deg);
+	}
 
+	100% {
+		opacity: 1;
+		transform:  translate(350px, -20px); rotate(0deg);
+	}
+}
+@keyframes blinkArrow {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+@keyframes outArrow {
+	0% {
+		opacity: 0;
+		transform: translate(950px, -50px) rotate(-200deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform:  translate(350px, -20px); rotate(0deg);
+	}
+}
+header {
+    width: 100%;
+ }
+
+#Digital {
+    width: 20%;
+    opacity: 0;
+    padding-left: 10px;
+    animation: introDigital 2s ease 2s 1 normal forwards;
+}
+@keyframes introDigital {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
 h1 {
     font-family: "farnham headline", Times, serif;
 	font-style: normal;
