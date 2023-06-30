@@ -242,6 +242,12 @@ body {
     }
 
 /* CONSISTENT TEXT STYLES FOR EMAIL CAMPAIGNS */     
+@media only screen and (max-width: 600px) {
+    .branding {
+        transform: scale(0.72);
+        transform-origin: 0% 0%;
+    }
+}
 #start {
     position: absolute;
     width: 20px;
@@ -281,12 +287,50 @@ body {
 		transform:  translate(350px, -20px); rotate(0deg);
 	}
 }
-header {
-    width: 100%;
- }
 
+@media only screen and (max-width: 600px) {
+    #start {
+        position: absolute;
+        width: 15px;
+        animation: startArrowM 1s ease 0s 1 normal forwards, blinkArrowM 1s ease 1.5s 1 normal forwards, outArrow 1s ease 3.5s 1 reverse forwards;
+    }
+}
+@keyframes startArrowM {
+	0% {
+		opacity: 0;
+		transform: translate(950px, -50px) rotate(-200deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform:  translate(250px, -20px); rotate(0deg);
+	}
+}
+@keyframes blinkArrowM {
+	0%,
+	50%,
+	100% {
+		opacity: 1;
+	}
+
+	25%,
+	75% {
+		opacity: 0;
+	}
+}
+@keyframes outArrowM {
+	0% {
+		opacity: 0;
+		transform: translate(950px, -50px) rotate(-200deg);
+	}
+
+	100% {
+		opacity: 1;
+		transform:  translate(250px, -20px); rotate(0deg);
+	}
+}
 #Digital {
-    width: 20%;
+    height: 35px;
     opacity: 0;
     padding-left: 10px;
     animation: introDigital 2s ease 2s 1 normal forwards;
@@ -381,20 +425,6 @@ subhead {
             width: 65vw;
     }
     }
-.logoIntro {
-    animation: logoIntro 1s ease 0s 1 normal forwards;
-}
-@keyframes logoIntro {
-	0% {
-		opacity: 0;
-		transform: translateY(-250px);
-	}
-
-	100% {
-		opacity: 1;
-		transform: translateY(0);
-	}
-}
 
 
 FOOTER {
@@ -460,6 +490,7 @@ FOOTER {
 @media only screen and (max-width: 600px) {
     .logoText {
         text-transform:none; 
+        text-transform: uppercase; 
     }
 }
 .logo {
@@ -619,6 +650,20 @@ button:hover {
     z-index: 5;
     transition: 0.3s;
 }
+@media only screen and (max-width: 600px) {
+    button {
+        width: 130%;
+        background-color: transparent;
+        border: 3px solid var(--accent);
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        padding: 20px 40px 20px 20px;
+        z-index: 5;
+        transition: 0.3s;
+    }
+}
 
 
 .heroImage {
@@ -671,3 +716,4 @@ accentDark {
     color: var(--accent);
     filter: brightness(55%);
 }
+
