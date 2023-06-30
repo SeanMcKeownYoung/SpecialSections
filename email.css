@@ -330,9 +330,10 @@ body {
 	}
 }
 #Digital {
-    height: 35px;
+    height: 30px;
     opacity: 0;
     padding-left: 10px;
+    transform: translate(0px, -7px);
     animation: introDigital 2s ease 2s 1 normal forwards;
 }
 @keyframes introDigital {
@@ -389,18 +390,23 @@ leadin {
     color: #FFFFFF;
 }
 
-p {
+ul {
     text-align: left;
+    color: #FFFFFF;
     width: 150;
     font-family: 'benton sans', sans-serif; 
     font-weight: 400; 
     font-size: 18px; 
     line-height: 24px;
     z-index: 3;
+    list-style-type: square;
+    list-style-position: inside;
+    padding-left: 0;
+    padding-top: 10px;
     }
 
     @media only screen and (max-width: 600px) {
-        p {
+        ul {
             text-align: left;
             width: 65vw;
             font-family: 'benton sans', sans-serif; 
@@ -410,6 +416,9 @@ p {
             z-index: 5;
             }
         }
+li {
+    padding-top: 20px;
+}
     
 
 subhead {
@@ -422,7 +431,7 @@ subhead {
 }
     @media only screen and (max-width: 600px) {
         subhead {
-            width: 65vw;
+            width: 600px;
     }
     }
 
@@ -514,118 +523,11 @@ underLine {
     text-decoration: underline;
 }
 
-
 .HERO {
     margin-top: 10px;
 }
 
-#page-flip {
-    position: absolute;
-    padding: 0px;
-    width: 400px;
-    height: 776px;
-    overflow: hidden;
-}
 
-
-#r1 {
-    position: absolute;
-    z-index: 2;
-    transform-origin: 1315px 500px;
-    transform: translate(-1030px, -500px) rotate(-45deg);
-    transition-property: transform, transform-origin;
-    transition-duration: 1s;
-}
-
-#p1 {
-    width: 1350px;
-    height: 1388px;
-    overflow: hidden;
-    box-shadow: 0 0 11px rgba(0, 0, 0, .5);
-}
-
-#p1 > div {
-    transform-origin: 290px 0;
-    transform: translate(1030px, 500px) rotate(45deg);
-    transition-property: transform, transform-origin;
-    transition-duration: 1s;
-    width: 400px;
-    height: auto;
-}
-
-
-#p2 > div {
-    width: 400px;
-    height: 776px;
-    box-shadow: 0 0 11px rgba(0, 0, 0, .5);
-    position: absolute;
-    z-index: 1;
-    background-size: 400px;
-}
-
-/* This is the start of inside page rotate */
-#r3 {
-    transform-origin: 1315px 500px;
-    transform: translate(-1030px, -500px) rotate(-45deg);
-    transition-property: transform, transform-origin;
-    transition-duration: 1s;
-    position: absolute;
-    z-index: 2;
-}
-
-
-#p3 {
-    width: 1350px;
-    height: 1388px;
-    overflow: hidden;
-}
-
-#p3 > div {
-    transform-origin: 0 0;
-    transform: translate(1305px, 585px) rotate(-45deg);
-    transition-property: transform, transform-origin;
-    transition-duration: 1s;
-    box-shadow: 0 0 11px rgba(0, 0, 0, .5);
-    width: 1570px;
-    height: 766px;
-    background-color: rgb(219, 215, 213);
-    overflow: hidden;
-}
-/* This is the end of inside page rotate */
-
-
-#page-flip:hover #r1 {
-    transform-origin: 1570px 500px;
-    transform: translate(-1330px, -500px) rotate(0deg);
-}
-
-#page-flip:hover #p1 > div {
-    transform-origin: 290px 0;
-    transform: translate(1330px, 500px) rotate(0deg);
-}
-
-#page-flip:hover #r3 {
-    transform-origin: 1570px 500px;
-    transform: translate(-1330px, -500px) rotate(0deg);
-}
-
-#page-flip:hover #p3 > div {
-    transform-origin: 30 0;
-    transform: translate(1000px, 500px) rotate(0deg);
-}
-
-.arrow {
-    font-size: 80px;
-    color: var(--accent);
-    transform: scaleX(-1) rotate(-90deg) translate(40px, 60px);
-}
-@media only screen and (max-width: 600px) {
-    .arrow {
-        font-size: 80px;
-        transform: scaleX(-1) rotate(180deg) translate(110px, -72px);
-        z-index: 3;
-    }
-}
 
 button {
     background-color: transparent;
@@ -637,6 +539,7 @@ button {
     padding: 20px 40px 20px 20px;
     z-index: 5;
     transition: 0.3s;
+    margin-top: 20px;
 }
 
 button:hover {
@@ -687,14 +590,30 @@ button:hover {
 
 @media only screen and (max-width: 600px) {
     .heroImage {
-        display: block;
         transform: scale(0.8);
         transform-origin: 0% 0%;
+        padding-bottom: 100px;
         height: 550px;
         margin-left: 0;
-        animation: none;
+        animation: coverAnimM 3s cubic-bezier(0.68, -0.6, 0.32, 1.6) 0s 1 normal forwards;
     }
 }
+
+@keyframes coverAnimM {
+	0% {
+		opacity: 0;
+		transform: scale(2);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(calc(85% - 285px)) scale(0.8) transform-origin: 0% 0%;
+	}
+}
+
+
+
+
 accentColor {
     color: var(--accent);
 }
